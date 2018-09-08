@@ -22,7 +22,7 @@ require_once 'Facebook/FacebookRequest.php';
     getCredentials($_GET['code'], $authUrl);
     $userName = $_SESSION["userInfo"]["name"];
     $userEmail = $_SESSION["userInfo"]["email"];
-    header('Location: https://localhost/rtCampAppBookProject/userhome.php?code='.$_GET['code']);
+    header('Location: https://rtcampappbookproject.herokuapp.com/userhome.php?code='.$_GET['code']);
   }
 
     use Facebook\FacebookRequest;
